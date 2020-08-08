@@ -1,0 +1,26 @@
+.slidein {
+    animation-name: slideIn;
+    animation-duration: 5s;
+}
+
+.slidein2 {
+    animation-name: slideIn2;
+    animation-duration: 5s;
+}
+
+@keyframes slideIn {
+    from {
+        margin-left: 110%;
+        width: 300%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+@keyframes slideIn2 {
+    from {transform: scaleX(-1);}
+    to {transform: scaleX(1);}
+}
