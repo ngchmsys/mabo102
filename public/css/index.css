@@ -1,0 +1,120 @@
+@charset "utf-8";
+
+html {
+    font-size: 0.625rem;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+p,h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    margin: 0;
+}
+
+img {
+    margin-bottom: 0;
+}
+
+/* ---------- 
+ * index.html 
+ * ---------- */
+
+.wrap {
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column;
+}
+
+.nav-header {
+    background-image: url(../images/mo17923IMGL7531_TP_V.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+}
+
+.logo {
+    padding: 4rem 0 0 2rem;
+}
+
+.site-title {
+    padding: 2rem;
+    color: #ebf6f7;
+}
+
+.contents {
+    flex: 1;
+    display: flex;
+    flex-flow: row wrap;
+    background-color: #393f4c;
+}
+
+.main {
+    flex: 3;
+    padding: 2rem;;
+    background-color: #ebf6f7;
+}
+
+.content-item {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.card {
+    flex: 1;
+    background-color: #ebf6f7;
+    border: 2px solid #0f2350;
+    border-radius: 1rem;
+    margin: 1rem;;
+    padding: 1rem;
+}
+
+.sidebar {
+    flex: 1;
+    padding: 2rem;
+    background-color: #ebf6f7;
+}
+
+.nav-footer {
+    margin-top: auto;
+    padding: 2rem;
+    background-color: #393f4c;
+}
+
+.copyright {
+    color: #ebf6f7;
+}
+
+.slidein {
+    animation-name: slideIn;
+    animation-duration: 3s;
+}
+
+.slidein2 {
+    animation-name: slideIn2;
+    animation-duration: 3s;
+}
+
+@keyframes slideIn {
+    from {
+        margin-left: 110%;
+        width: 300%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+@keyframes slideIn2 {
+    from {transform: scaleX(-1);}
+    to {transform: scaleX(1);}
+}
