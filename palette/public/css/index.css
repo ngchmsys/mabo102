@@ -1,0 +1,135 @@
+@charset "utf-8";
+
+#top-page {
+    margin: 0;
+    background-color: #165e83;
+}
+
+.header-nav {
+    margin: 0;
+    background-color: #0f2350;
+}
+
+.logo img {
+    height: 150px;
+    flex: 1;
+}
+
+.logo p {
+    flex: 1;
+    align-self: flex-start;
+}
+
+/* container */
+.container {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 5rem 5rem;
+}
+
+.contents {
+    flex: 1;
+}
+
+.site-title {
+    font-size: 4rem;
+    font-family: 'Bitter', serif;
+    color: #ebf6f7;
+    line-height: 1;
+    margin-bottom: 3rem;
+}
+
+.message {
+    font-size: 1.5rem;
+    font-family: 'Bitter', serif;
+    color: #ebf6f7;
+    margin-bottom: 2rem;
+}
+
+.link-btn {
+    padding: .8em;
+    border-radius: .5em;
+    border-color: #165e83;
+    background-color: #165e83;
+    color: whitesmoke;
+    font-size: 1.6em;
+    font-weight: 600;
+    font-family: 'Bitter', serif;
+}
+
+.link-btn:hover {
+    color: dodgerblue;
+    background-color: #ebf6f7;
+}
+
+.main {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 3em;
+    padding: 2rem;
+    background-color: #5f9ea0;
+}
+
+.color-form {
+    flex: 1;
+    line-height: 2;
+}
+
+.component-area {
+    flex: 1;
+}
+
+.content-title {
+    font-size: 4rem;
+    font-family: 'Bitter', serif;
+    color: #ebf6f7;
+    line-height: 1;
+    margin-bottom: 2rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-label {
+    font-size: 1.2rem;
+}
+
+.palette-area {
+    width: 100px;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+}
+
+.palette-color {
+    width: 100px;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 1rem;
+    background-color: #ebf6f7;
+}
+
+.stock-btn {
+    padding: 1em;
+    border-radius: .5em;
+    border-color: #0f2350;
+    background-color: #0f2350;
+    color: #ebf6f7;
+    font-size: 1.6em;
+    font-weight: 600;
+    font-family: 'Bitter', serif;
+}
+
+.stock-btn:hover {
+    color: #0f2350;
+    background-color: #ebf6f7;
+}
+
+.footer-nav {
+    margin-top: auto;
+    color: #ebf6f7;
+    background-color: #0f2350;
+}

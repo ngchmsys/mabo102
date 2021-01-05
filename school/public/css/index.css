@@ -1,11 +1,12 @@
 @charset "utf-8";
 
 #top-page {
-    background-image: url(../images/macbook1697_TP_V.jpg);
+    background-image: url(../images/bg-photograph-sp.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
+    background-color: transparent;
 }
 
 /* container */
@@ -16,7 +17,7 @@
 .site-title {
     font-size: 9rem;
     font-family: 'Bitter', serif;
-    color: #ebf6f7;
+    color: #ffffff;
     line-height: 1;
     margin-bottom: 5rem;
 }
@@ -24,22 +25,22 @@
 .message {
     font-size: 1.5rem;
     font-family: 'Bitter', serif;
-    color: #ebf6f7;
+    color: #ffffff;    
     margin-bottom: 3rem;
 }
 
 .link-btn {
     padding: .8em;
     border-radius: .5em;
-    border-color: #393f4c;
-    background-color: #393f4c;
-    color: #ebf6f7;
+    border-color: dodgerblue;
+    background-color: dodgerblue;
+    color: whitesmoke;
     font-size: 1.6em;
     font-weight: 600;
     font-family: 'Bitter', serif;
 }
 
 .link-btn:hover {
-    color: #393f4c;
-    background-color: #ebf6f7;
+    color: dodgerblue;
+    background-color: #ffffff;
 }

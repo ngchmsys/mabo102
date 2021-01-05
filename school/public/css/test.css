@@ -1,0 +1,57 @@
+@charset "utf-8";
+
+/* container */
+.container {
+//    margin: auto auto 5rem 5rem;
+    display:flex;
+    height: 1500px;
+}
+
+.main {
+    width: 660px;
+    display: block;
+}
+
+.sidebar {
+    width: 320px;
+    background-color: antiquewhite;
+}
+
+.menu {
+    margin-bottom: 10px;
+    height: 100px;
+    background-color:brown;
+}
+
+.fix-menu--fixed {
+//    margin-bottom: 0px;
+    top: 10px;
+    background-color: blueviolet;
+    position: sticky;
+    z-index: 1;
+}
+
+.test-title {
+    font-size: 10vw;
+    font-family: 'Bitter', serif;
+    line-height: 1;
+    margin-bottom: 5rem;
+}
+
+.message {
+    font-size: 1.5vw;
+    font-family: 'Bitter', serif;
+    margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 7vw;
+    }
+
+    .message {
+        font-size: 4vw;
+        font-family: 'Bitter', serif;
+        margin-bottom: 3rem;
+    }
+}

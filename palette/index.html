@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="public/css/reset.css">
+        <link rel="stylesheet" href="public/css/base.css">
+        <link rel="stylesheet" href="public/css/index.css">
+        <title>Palette</title>
+    </head>
+    <body id="top-page">
+        <div id="app" class="wrapper">
+            <header class="header-nav">
+                <div class="logo">
+                    <h1 class="site-title">{{ site_title }}</h1>
+                    <a href="index.html">
+                        <img src="public/images/logo.png" alt="Logo:PALETTE">
+                    </a>
+                    <p class="message">
+                        このWebサイトは、学習用サンプルとして作成する「PALETTE」という架空の色見本のポートフォリオサイトです。
+                    </p>
+                    </div>
+                <nav class="global-nav">
+                    <ul class="nav-items">
+                        <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            
+            <div class="container">
+                <div class="contents">
+                    <h2 class="content-title">Color Maker</h2>
+                    <main class="main">
+                        <form class="color-form" action="#">
+                                <div class="form-group">
+                                    <label class="form-label">Type</label>
+                                    <label class="form-radio">
+                                        <input type="radio" v-model="style_type" value="hex">
+                                        <i class="form-icon"></i> #ffffff
+                                    </label>
+                                    <label class="form-radio">
+                                        <input type="radio" v-model="style_type" value="rgb">
+                                        <i class="form-icon"></i> RGB(255, 255, 255)
+                                    </label>
+                                    <label class="form-radio">
+                                        <input type="radio" v-model="style_type" value="rgba" checked>
+                                        <i class="form-icon"></i> RGBA(255, 255, 255, 0.8)
+                                    </label>
+                                </div>
+                            <fieldset class="form-group">
+                                <legend>Color: {{style_type}}</legend>
+                                <div class="form-group">
+                                    <label class="form-label">R:</label>
+                                    <input v-model="setColor.r" type="text" class="form-input">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">G:</label>
+                                    <input v-model="setColor.g" type="text" class="form-input">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">B:</label>
+                                    <input v-model="setColor.b" type="text" class="form-input">
+                                </div>
+                                <span  v-if="style_type=='rgba'">
+                                <div class="form-group">
+                                    <label class="form-label">A:</label>
+                                    <input v-model="setColor.a" type="text" class="form-input">
+                                </div>
+                                </span>
+                            </fieldset>
+                                <button class="stock-btn" @click="stock">Stock</button>
+                        </form>
+                        <div class="component-area">
+                            <h2>Component Area</h2>
+                            <palette :color="{setColor, style_type}"></palette>
+                        </div>
+                    </main>
+                </div>
+            </div>
+
+            <footer class="footer-nav">
+                 <small>Copyright&copy;2020 sireline.</small>
+            </footer>
+        </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="public/js/app.js"></script>
+    </body>
+</html>
