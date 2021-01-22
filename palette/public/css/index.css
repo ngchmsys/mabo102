@@ -2,7 +2,7 @@
 
 #top-page {
     margin: 0;
-    background-color: #165e83;
+    background-color: #4682b4;
 }
 
 .header-nav {
@@ -67,7 +67,7 @@
     flex-flow: row wrap;
     gap: 3em;
     padding: 2rem;
-    background-color: #5f9ea0;
+    /* background-color: #5f9ea0; */
 }
 
 .color-form {
@@ -88,16 +88,16 @@
 }
 
 .form-group {
-    margin-bottom: 1rem;
+    padding: .5rem;
 }
 
 .form-label {
-    font-size: 1.2rem;
+    font-size: 2rem;
 }
 
 .palette-area {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     align-items: center;
     justify-content: center;
     border-radius: 1rem;
@@ -105,11 +105,15 @@
 }
 
 .palette-color {
-    width: 100px;
+    width: 80px;
     padding: 1rem;
     text-align: center;
     border-radius: 1rem;
     background-color: #ebf6f7;
+}
+
+.btn-group {
+    margin-top: 2rem;
 }
 
 .stock-btn {
@@ -125,6 +129,22 @@
 
 .stock-btn:hover {
     color: #0f2350;
+    background-color: #ebf6f7;
+}
+
+.reset-btn {
+    padding: 1em;
+    border-radius: .5em;
+    border-color: #cf2350;
+    background-color: #cf2350;
+    color: #ebf6f7;
+    font-size: 1.6em;
+    font-weight: 600;
+    font-family: 'Bitter', serif;
+}
+
+.reset-btn:hover {
+    color: #cf2350;
     background-color: #ebf6f7;
 }
 
