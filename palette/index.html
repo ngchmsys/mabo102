@@ -35,43 +35,46 @@
                     <h2 class="content-title">Color Maker</h2>
                     <main class="main">
                         <form class="color-form" action="#">
-                                <div class="form-group">
+                                <!-- <div class="form-group">
                                     <label class="form-label">Type</label>
-                                    <!-- <label class="form-radio">
+                                    <label class="form-radio">
                                         <input type="radio" v-model="style_type" value="hex">
                                         <i class="form-icon"></i> #ffffff
-                                    </label> -->
+                                    </label>
                                     <label class="form-radio">
                                         <input type="radio" v-model="style_type" value="rgb">
                                         <i class="form-icon"></i> RGB(255, 255, 255)
                                     </label>
-                                    <!-- <label class="form-radio">
+                                    <label class="form-radio">
                                         <input type="radio" v-model="style_type" value="rgba" checked>
                                         <i class="form-icon"></i> RGBA(255, 255, 255, 0.8)
-                                    </label> -->
-                                </div>
+                                    </label>
+                                </div> -->
                             <fieldset class="form-group">
                                 <legend>Color: {{style_type}}</legend>
                                 <div class="form-group">
                                     <label class="form-label">R:</label>
-                                    <input v-model="setColor.r" type="text" class="form-input">
+                                    <input v-model="setColor.r" type="range" class="form-input" min="0" max="255" value="0">
                                 </div>
                                 <div class="form-group">
                                     <label class="form-label">G:</label>
-                                    <input v-model="setColor.g" type="text" class="form-input">
+                                    <input v-model="setColor.g" type="range" class="form-input" min="0" max="255" value="0">
                                 </div>
                                 <div class="form-group">
                                     <label class="form-label">B:</label>
-                                    <input v-model="setColor.b" type="text" class="form-input">
+                                    <input v-model="setColor.b" type="range" class="form-input" min="0" max="255" value="0">
                                 </div>
-                                <span  v-if="style_type=='rgba'">
+                                <!-- <span  v-if="style_type=='rgba'">
                                 <div class="form-group">
                                     <label class="form-label">A:</label>
                                     <input v-model="setColor.a" type="text" class="form-input">
                                 </div>
-                                </span>
+                                </span> -->
                             </fieldset>
+                            <div class="btn-group">
                                 <button class="stock-btn" @click="stock">Stock</button>
+                                <button class="reset-btn" @click="reset">Reset</button>
+                            </div>
                         </form>
                         <div class="component-area">
                             <h2>Component Area</h2>
@@ -82,7 +85,7 @@
             </div>
 
             <footer class="footer-nav">
-                 <small>Copyright&copy;2020 ngchmsys.</small>
+                <small>Copyright&copy;2020 ngchmsys.</small>
             </footer>
         </div>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
